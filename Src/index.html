@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imóvel Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="/Assets/logo.png" alt="Imóvel Guide Logo" class="logotop" />
+      <nav class="bar">
+        <div>
+          <a href="#">Condomínios</a>
+          <a href="#">Fórum</a>
+          <a href="#">Guia</a>
+          <a href="#">Artigos</a>
+          <a href="#">Ferramentas</a>
+        </div>
+        <div>
+          <a href="#">Cotar Imóvel</a>
+          <a href="#">Planos</a>
+          <a href="#">Entrar</a>
+          <a href="#" class="btn-cadastre">CADASTRE-SE</a>
+          <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+          <a href="#">Condomínios</a>
+          <a href="#">Fórum</a>
+          <a href="#">Guia</a>
+          <a href="#">Artigos</a>
+          <a href="#">Ferramentas</a>
+          <a href="#">Cotar Imóvel</a>
+          <a href="#">Planos</a>
+          <a href="#">Entrar</a>
+          <a href="#" class="btn-cadastre">CADASTRE-SE</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="content">
+        <div class="row">
+          <div class="card">
+            <div class="corretor-item">
+              <div class="corretor-img">
+                <img src="/Assets/img3.jpg" alt="Foto da Corretora" />
+              </div>
+
+              <div class="corretor-descricao">
+                <h2>Nome Corretora</h2>
+                <p><b>3.000 pontos</b></p>
+                <div class="corretor-telefone">
+                  <a href="#" class="btn-telefone" id="btn-telefone"
+                    >Ver Telefone</a
+                  >
+                  <div id="telefone"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="corretor-item">
+              <div class="corretor-img">
+                <img src="/Assets/img2.jpg" alt="Foto do Corretor" />
+              </div>
+
+              <div class="corretor-descricao">
+                <h2>Nome Corretor</h2>
+                <p><b>1.260 pontos</b></p>
+                <div class="corretor-telefone">
+                  <a href="#" class="btn-telefone" id="btn-telefone2"
+                    >Ver Telefone</a
+                  >
+                  <div id="telefone2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="title">Mande uma mensagem:</h2>
+            <div class="contato-item">
+              <form action="#">
+                <div class="contato-input">
+                  <input
+                    type="text"
+                    id="mensagem-cpf"
+                    placeholder="Digite seu CPF"
+                    required
+                  />
+                </div>
+                <div class="contato-input">
+                  <input
+                    type="text"
+                    id="mensagem-telefone"
+                    placeholder="Digite seu telefone"
+                    required
+                  />
+                </div>
+                <div class="contato-input">
+                  <textarea
+                    id="mensagem-assunto"
+                    placeholder="Digite o assunto"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-mensagem"
+                  id="mensagem-btn"
+                >
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="title">Regra de 3</h2>
+            <div class="regra-item">
+              <div class="regra-item-input">
+                <input type="text" placeholder="60" id="valor1" />
+                <div class="divisor"></div>
+                <input type="text" placeholder="100" id="valor2" />
+              </div>
+              <div class="regra-item-input">
+                <input type="text" placeholder="30" id="valor3" />
+                <div class="divisor"></div>
+                <input type="text" placeholder="" disabled id="resultado" />
+              </div>
+              <button class="btn btn-calcular" id="calcular">Calcular</button>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="casa-item">
+                <img src="/Assets/casa.jpeg" alt="Casa" />
+              </div>
+            </div>
+            <button class="btn btn-modal" id="modal">
+              ABRIR IMAGEM NO MODAL
+            </button>
+          </div>
+          <div>
+            <div class="card" id="capture">
+              <div class="casa-item">
+                <img src="/Assets/casa.jpeg" alt="Casa" />
+                <div class="imovel-guide">
+                  <p>Imovel Guide</p>
+                </div>
+              </div>
+            </div>
+            <div class="download">
+              <button class="btn btn-download" id="download" download="">
+                Download
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="casa-item">
+              <img src="/Assets/casa.jpeg" alt="Casa" class="zoom-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-close">
+          <span class="close">X</span>
+        </div>
+        <div class="modal-img">
+          <img src="/Assets/casa.jpeg" alt="Casa" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        <a href="#">Termos</a>
+        <a href="#">Contatos</a>
+        <a href="#">Sobre</a>
+      </div>
+      <div>
+        <p>&copy; Copyright 2022. Todos os direitos reservados.</p>
+      </div>
+      <img src="/Assets/logo.png" alt="Imóvel Guide Logo" class="logobot" />
+    </footer>
+    <script src="script.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="telefone.js"></script>
+    <script src="mensagem.js"></script>
+    <script src="regra3.js"></script>
+    <script src="zoom.js"></script>
+    <script src="menu.js"></script>
+    <script>
+      async function download() {
+        html2canvas(document.querySelector("#capture")).then((canvas) => {
+          var link = document.createElement("a");
+          link.download = "filename.png";
+          link.href = canvas.toDataURL();
+          link.click();
+        });
+      }
+      let downloadButton = document.getElementById("download");
+      downloadButton.addEventListener("click", () => download());
+    </script>
+  </body>
+</html>
